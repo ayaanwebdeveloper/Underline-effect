@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.hov{
+    margin-top: 200px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hov::after{
+    content: "";
+    width: 0%;
+    background-color: black;
+    height: 8px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    transition: width 0.5s ;
+}
+.hov:hover::after{
+    width: 100%;
+  
+}
